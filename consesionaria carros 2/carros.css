@@ -1,0 +1,377 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+}
+
+/* HEADER */
+
+.cabecera {
+    background-color: black;
+    height: 150px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#imagen-logo {
+    height: 120px;
+    width: 130px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+/* NAV */
+
+.nav-ref {
+    display: none;
+}
+
+/* BOTONES HEADER */
+
+.contenedor-botones {
+    width: 250px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+#menu-opciones {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#menu-opciones:hover {
+    color: orange;
+}
+
+#menu-carros {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#menu-carros:hover {
+    color: orange;
+}
+
+#menu-carros.activado-carro {
+    color: orange;
+}
+
+#agregar-carro {
+    border: 3px solid red;
+    height: 40px;
+    color: white;
+    background: red;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+#agregar-carro:hover {
+    background-color: rgba(255, 0, 0, 0.685);
+    transform: scale(1.1);
+}
+
+/* MENU LATERAL */
+
+.menu-lateral {
+    background-color: rgba(255, 0, 0, 0.5);
+    width: 200px;
+    height: 115%;
+    padding: 20px 0;
+    position: absolute;
+    left: -200px;
+    transition: 0.3s ease;
+}
+
+.menu-lateral li {
+    height: 40px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.menu-lateral a {
+    color: white;
+    text-decoration: unset;
+    font-size: 20px;
+    font-family: "DM Serif Display", serif;
+    font-weight: bold;
+}
+
+.menu-lateral p {
+    margin-left: 10px;
+}
+
+.menu-lateral li:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+
+/* imagenes carros */
+
+.contenedor-carros {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contenedor-carros ul {
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    gap: 20px;
+}
+
+.contenedor-carros li {
+    height: 450px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+/* IMAGENES CARROS / IMAGENES */
+
+.contenedor-carros .imagenes {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.contenedor-carros .imagenes:hover {
+    filter: brightness(1.1);
+}
+
+/* IMAGENES CARROS / TITULOS */
+
+.contenedor-carros .titulo-carros {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.contenedor-carros .precio-carro {
+    text-align: center;
+    font-size: 20px;
+}
+
+.contenedor-carros .precio-carro strong {
+    font-weight: bold;
+}
+
+/* CUADRO BUSCAR */
+
+.contenedor-buscador {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadro-buscar {
+    width: 80vw;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 20px;
+    background-color: gainsboro;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cuadro-buscar p {
+    margin: 7px 0;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.cuadro-buscar select {
+    width: 90%;
+    height: 3em;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+#contenedor-boton-carro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.cuadro-buscar button {
+    font-size: 18px;
+    width: 60%;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(2, 2, 102);
+    border-color: none;
+    color: white;
+    cursor: pointer;
+}
+
+.cuadro-buscar button:hover {
+    background-color: rgba(1, 1, 188, 0.752);
+}
+
+/* MODELO */
+
+/* #Audi, #Mercedez, #Nissan {
+    display: none;
+} */
+
+
+@media (min-width:750px) {
+
+    /* HEADER */
+
+    .cabecera {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        height: auto;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    #imagen-logo {
+        margin-bottom: unset;
+    }
+
+    #imagen-logo {
+        height: 100px;
+    }
+
+    /* BOTONES */
+
+    .contenedor-botones {
+        margin-right: 30px;
+    }
+
+    #menu-opciones {
+        font-weight: bold;
+    }
+
+    /* MENU LATERAL 2 */
+
+    .menu-lateral2 {
+        top: 135px;
+    }
+
+    /* IMAGENES CARROS */
+
+    .contenedor-carros {
+        margin-top: 50px;
+    }
+
+    /* MENU LATERAL 2 */
+
+    .menu-lateral2 {
+        position: fixed;
+    }
+
+    /* contenedor buscar */
+
+    .contenedor-buscador {
+        margin-top: 150px;
+    }
+
+    .cuadro-buscar {
+        width: 50vw;
+    }
+}
+
+@media (min-width:834px) {
+
+    /* HEADER */
+
+    .cabecera {
+        justify-content: space-around;
+    }
+
+    /* NAV */
+    .nav-ref {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .nav-ref li {
+        display: inline;
+        margin-right: 10px;
+        font-family: "DM Serif Display", serif;
+    }
+
+    .nav-ref a {
+        color: white;
+        text-decoration: unset;
+        font-size: 20px;
+    }
+
+    .nav-ref a:hover {
+        text-decoration: underline;
+        color: orange;
+    }
+
+    /* BOTONES */
+
+    #menu-opciones {
+        display: none;
+    }
+
+    /* MENU LATERAL 2 */
+
+    .menu-lateral2 {
+        height: 500px;
+    }
+
+    /* CUADRO BUSCAR */
+
+    .cuadro-buscar button {
+        font-size: 22px;
+        padding: 15px;
+    }
+}
+
+@media (min-width:1200px) {
+
+    /* NAV */
+
+    .nav-ref li {
+        margin-right: 15px;
+    }
+
+    .nav-ref a {
+        font-size: 25px;
+    }
+
+    /* BOTONES */
+
+    #agregar-carro {
+        font-size: 18px;
+        padding: 15px;
+        height: unset;
+        border-radius: 20px;
+    }
+}

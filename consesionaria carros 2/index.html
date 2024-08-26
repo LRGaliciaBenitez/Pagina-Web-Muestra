@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Courgette&family=DM+Serif+Display:ital@0;1&family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+        <!-- ICONOS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- ESTILOS -->
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="imagenes/carro.png" type="image/x-icon">
+        <title>Consesionaria Galicia</title>
+    </head>
+
+    <body>
+
+        <header class="cabecera">
+            <img src="imagenes/icono3.jpg" alt="Logotipo" id="imagen-logo">
+            <div class="contenedor-botones">
+                <nav class="nav-ref">
+                    <ul>
+                        <li class="ref"><a href="index.html">Home</a></li>
+                        <li class="ref"><a href="carros.html">Carros</a></li>
+                        <li class="ref"><a href="">Contacto</a></li>
+                    </ul>
+                </nav>
+                <button type="button" id="menu-opciones">
+                    <i class="bi bi-list"></i>
+                </button>
+                <button type="button" id="agregar-carro">+ AGREGAR CARRO</button>
+            </div>
+        </header>
+
+        <!-- MENU LATERAL -->
+
+        <div class="menu-lateral" id="menuLateral">
+            <ul>
+                <a href="index.html"><li><p>Home</p></li></a>
+                <a href="carros.html"><li><p>Carros</p></li></a>
+                <a href=""><li><p>Contacto</p></li></a>
+            </ul>
+        </div>
+
+        <!-- IMAGENES CARROS -->
+
+        <div id="imagenes-carros">
+            <img src="imagenes/carros/audi-r8.jpg" alt="AUDI">
+            <img src="imagenes/carros/camaro.jpg" alt="CAMARO">
+            <img src="imagenes/carros/lambo-huracan.jpg" alt="LAMBORGHINI">
+        </div>
+
+        <!-- CONTADOR -->
+
+        <div class="cont-conta">
+            <div class="cont-contador">
+                <p id="titulo-cont">Nuevo tesla Model S</p>
+                <p id="contador"></p>
+                <p id="desp-conta">¡Se de los primeros en conseguirlo!</p>
+            </div>
+        </div>
+
+        <!-- MAPA -->
+
+        <div class="contenedor-mapa">
+            <div class="contenedor-mapa2">
+                <h2>Ubicación</h2>
+                <div id="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1899.2999255293255!2d-97.77702842013228!3d17.8104936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c601e533783303%3A0xfcd615e9f84253fd!2sProl.%20de%20Valerio%20Trujano%2070%2C%20Centro%2C%2069000%20Heroica%20Cdad.%20de%20Huajuapan%20de%20Le%C3%B3n%2C%20Oax.!5e0!3m2!1ses!2smx!4v1719279382377!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEO -->
+
+        <div class="contenedor-principalVid">
+            <div class="contenedor-secundarioVid">
+                <h2 id="titulo-vid"><span style="color: red; font-weight: bold;">Nuevo Seat Ibiza</span> <span style="font-weight: bold;">2024</span></h2>
+                <iframe src="https://www.youtube.com/embed/V7DZc-rDFwU?si=0hIHB2Q88Vvfh3JB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- MISION, VISION, VALORES -->
+
+        <!-- <div class="adjetivos">
+
+            <div class="valores" id="mision">
+                <div class="valores-boton">
+                    <h3>Misión</h3>
+                    <button class="botones-adjetivos" id="boton-mision">
+                        <i class="bi bi-arrow-down-short"></i>
+                    </button>
+                </div>
+                <p class="parrafos" id="parrafo-mision">
+                    Ser líderes en el mercado automotriz ofreciendo productos y servicios de calidad que superen las expectativas de nuestros clientes. Nos comprometemos a proporcionar una experiencia de compra excepcional, respaldada por un equipo altamente capacitado y comprometido con la excelencia.
+                </p>
+            </div>
+
+            <div class="valores" id="vision">
+                <div class="valores-boton">
+                    <h3>Visión</h3>
+                    <button class="botones-adjetivos" id="boton-vision">
+                        <i class="bi bi-arrow-down-short"></i>
+                    </button>
+                </div>
+                <p class="parrafos" id="parrafo-vision">
+                    Convertirnos en la concesionaria preferida por los consumidores en nuestra región, reconocida por nuestra integridad, innovación y atención al cliente. Aspiramos a expandir nuestra presencia y mantener una posición de liderazgo en la industria automotriz, adaptándonos constantemente a las necesidades cambiantes del mercado y utilizando tecnología de vanguardia.
+                </p>
+            </div>
+
+            <div class="valores" id="valores">
+                <div class="valores-boton">
+                    <h3>Valores</h3>
+                    <button class="botones-adjetivos" id="boton-valores">
+                        <i class="bi bi-arrow-down-short"></i>
+                    </button>
+                </div>
+                <div class="parrafos" id="parrafo-valores">
+                    <p class="parrafos-valores">
+                        <strong>Integridad:</strong> Actuamos con honestidad y transparencia en todas nuestras interacciones. 
+                    </p>
+                    <p class="parrafos-valores">
+                        <strong>Calidad:</strong> Nos esforzamos por ofrecer productos y servicios de la más alta calidad.
+                    </p>
+                    <p class="parrafos-valores">
+                        <strong>Compromiso con el cliente:</strong>Compromiso con el cliente: Priorizamos la satisfacción del cliente y nos esforzamos por superar sus expectativas.
+                    </p>
+                    <p class="parrafos-valores">
+                        <strong>Innovación:</strong> Buscamos continuamente nuevas formas de mejorar y adaptarnos a las tendencias del mercado.
+                    </p>
+                </div>
+            </div>
+
+        </div> -->
+
+        <!-- FOOTER -->
+
+        <!-- NUEVO LANZAMIENTO -->
+
+        <div class="cont-lanzamiento">
+            <h2>EL NUEVO: <strong>FORD MUSTANG</strong> <span style="font-weight: bold;">2024</span></h2>
+            <div class="cont-lanz2">
+                <div class="cont" id="img1">
+                    <p class="cont-text">Exterior</p>
+                    <p class="cont-text2">5 Fotos</p>
+                </div>
+                <div class="cont" id="img2">
+                    <p class="cont-text">Interior</p>
+                    <p class="cont-text2">7 Fotos</p>
+                </div>
+                <div class="cont" id="img3">
+                    <p class="cont-text">Videos</p>
+                    <p class="cont-text2">3 Videos</p>
+                </div>
+                <div class="cont" id="img4">
+                    <p class="cont-text">Vista Interna</p>
+                    <p class="cont-text2">Ford Mustang 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+
+            <!-- REDES SOCIALES -->
+
+            <section class="contenedor-redes">
+                    <button class="red-social" id="facebook">
+                        <i class="bi bi-facebook"></i>
+                    </button></a>
+                    <button class="red-social" id="instagram">
+                        <i class="bi bi-instagram"></i>
+                    </button>
+                    <button class="red-social" id="youtube">
+                        <i class="bi bi-youtube"></i>  
+                    </button>
+                    <button class="red-social" id="x">
+                        <i class="bi bi-twitter-x"></i>
+                    </button>
+            </section>
+
+        </footer>
+
+
+
+
+
+        <script src="app.js"></script>
+        <script src="indiceCarros.js"></script>
+        <script src="ocultarParrafos.js"></script>
+        <script src="contador.js"></script>
+
+    </body>
+</html>

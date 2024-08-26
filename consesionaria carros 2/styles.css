@@ -1,0 +1,598 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+}
+
+/* HEADER */
+
+.cabecera {
+    background-color: black;
+    height: 150px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#imagen-logo {
+    height: 120px;
+    width: 130px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+/* NAV */
+
+.nav-ref {
+    display: none;
+}
+
+/* BOTONES HEADER */
+
+.contenedor-botones {
+    width: 250px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+#menu-opciones {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#agregar-carro {
+    border: 3px solid red;
+    height: 40px;
+    color: white;
+    background: red;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+#agregar-carro:hover {
+    background-color: rgba(255, 0, 0, 0.685);
+    transform: scale(1.1);
+}
+
+/* MENU LATERAL */
+
+.menu-lateral {
+    background-color: rgba(255, 0, 0, 0.5);
+    width: 200px;
+    height: 100%;
+    padding: 20px 0;
+    position: absolute;
+    left: -200px;
+    transition: 0.3s ease;
+}
+
+.menu-lateral li {
+    height: 40px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.menu-lateral a {
+    color: white;
+    text-decoration: unset;
+    font-size: 20px;
+    font-family: "DM Serif Display", serif;
+    font-weight: bold;
+}
+
+.menu-lateral p {
+    margin-left: 10px;
+}
+
+.menu-lateral li:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+/* IMAGENES CARROS */
+
+#imagenes-carros {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#imagenes-carros img {
+    width: 100%;
+    display: block;
+}
+
+/* CONTADOR */
+
+.cont-conta {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cont-contador {
+    width: 80vw;
+    height: 200px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    padding: 10px;
+}
+
+#titulo-cont {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Pacifico", cursive;
+}
+
+#contador {
+    font-size: 20px;
+    margin-top: 50px;
+    font-family: "Permanent Marker", cursive;
+    color: greenyellow;
+}
+
+#desp-conta {
+    margin-top: 55px;
+    font-family: "Pacifico", cursive;
+    font-size: 20px;
+}
+
+
+
+/* MAPA */
+
+.contenedor-mapa {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contenedor-mapa2 {
+    margin-bottom: 40px;
+    width: 80vw;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor-mapa2 h2 {
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#mapa iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 0 0 20px 20px;
+}
+
+/* ADJETIVOS */
+
+.adjetivos {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.valores {
+    width: 60vw;
+    border: 5px solid black;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+.valores-boton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.valores-boton button {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+}
+
+.valores h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.parrafos {
+    display: none;
+    transition: .5s ease;
+    font-size: 18px;
+}
+
+.botones-adjetivos {
+    transition: .5s ease;
+}
+
+.parrafos-valores {
+    margin-bottom: 8px;
+}
+
+.parrafos-valores strong {
+    font-weight:800;
+}
+
+/* VIDEO */
+
+.contenedor-principalVid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-secundarioVid {
+    width: 80vw;
+    border-radius: 20px;
+    border: none;
+}
+
+.contenedor-secundarioVid h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contenedor-secundarioVid iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* NUEVO LANZAMIENTO */
+
+.cont-lanzamiento {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.cont-lanzamiento h2 {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.cont-lanzamiento h2 strong {
+    font-weight: bold;
+    color: blue;
+    font-family: "Montserrat", sans-serif;
+}
+
+.cont-lanz2 {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cont:hover {
+    filter: brightness(1.2);
+}
+
+.cont-text {
+    font-size: 25px;
+}
+
+
+
+#img1 {
+    background: url(imagenes/img-lanzamiento/Ford-Mustang2.jpg)center center/cover;
+}
+
+#img2 {
+    background: url(imagenes/img-lanzamiento/interior3.jpg)center center/cover;
+}
+
+#img3 {
+    background: url(imagenes/img-lanzamiento/mustang1.jpg)center center/cover;
+}
+
+#img4 {
+    background: url(imagenes/img-lanzamiento/interior2.jpg)center center/cover;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+}
+
+/* REDES SOCIALES */
+
+.contenedor-redes {
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.red-social {
+    padding: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#facebook {
+    background-color: blue;
+    border: 3px solid blue;
+    color: white;
+}
+
+#instagram {
+    /* color: rgb(215, 17, 237); */
+    background-color: rgb(215, 17, 237);
+    color: white;
+    border-color: 3px solid rgb(215, 17, 237);
+}
+
+#youtube {
+    background-color: red;
+    color: white;
+    border-color: 3px solid red;
+}
+
+
+
+
+@media (min-width:750px) {
+
+    /* HEADER */
+
+    .cabecera {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        height: auto;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    #imagen-logo {
+        margin-bottom: unset;
+    }
+
+    #imagen-logo {
+        height: 100px;
+    }
+
+    /* BOTONES */
+
+    .contenedor-botones {
+        margin-right: 30px;
+    }
+
+    #menu-opciones {
+        font-weight: bold;
+    }
+}
+
+@media (min-width:834px) {
+
+    /* HEADER */
+
+    .cabecera {
+        justify-content: space-around;
+    }
+
+    /* NAV */
+    .nav-ref {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .nav-ref li {
+        display: inline;
+        margin-right: 10px;
+        font-family: "DM Serif Display", serif;
+    }
+
+    .nav-ref a {
+        color: white;
+        text-decoration: unset;
+        font-size: 20px;
+    }
+
+    .nav-ref a:hover {
+        text-decoration: underline;
+        color: orange;
+    }
+
+    /* BOTONES */
+
+    #menu-opciones {
+        display: none;
+    }
+
+    /*  CONTADOR */
+
+    .cont-contador {
+        width: 50vw;
+    }
+
+    /* MAPA */
+
+    .contenedor-mapa2 h2 {
+        font-size: 30px;
+    }
+
+    #mapa iframe {
+        height: 400px;
+    }
+
+    /* VIDEO */
+
+    .contenedor-secundarioVid {
+        width: 60vw;
+    }
+
+    .contenedor-secundarioVid h2 {
+        font-size: 30px;
+    }
+
+    .contenedor-secundarioVid iframe {
+        height: 400px;
+    }
+
+    /* ADJETIVOS */
+
+    .adjetivos {
+        width: 100%;
+        flex-direction: row;
+        padding: 20px 0;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .valores {
+        width: 30vw;
+        margin: 0 2.5vw;
+        height: 470px;
+        border: unset;
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .valores:hover {
+        box-shadow: 10px 10px 10px rgba(241, 105, 0, 0.5);
+    }
+
+    .valores-boton {
+        display: unset
+    }
+
+    .valores-boton button{
+        display: none;
+    }
+
+    .valores h3 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .parrafos {
+        display: block;
+    }
+
+    /* NUEVO LANZAMIENTO */
+
+    .cont-lanzamiento h2 {
+        font-size: 30px;
+        text-align: left;
+        width: 80vw;
+    }
+
+    .cont-lanz2 {
+        flex-direction: row;
+        width: 80vw;
+    }
+
+
+    /* FOOTER */
+
+    /* REDES SOCIALES */
+
+    .red-social {
+        font-size: 30px;
+    }
+}
+
+@media (min-width:1200px) {
+
+    /* NAV */
+
+    .nav-ref li {
+        margin-right: 15px;
+    }
+
+    .nav-ref a {
+        font-size: 25px;
+    }
+
+    /* BOTONES */
+
+    #agregar-carro {
+        font-size: 18px;
+        padding: 15px;
+        height: unset;
+        border-radius: 20px;
+    }
+
+    /* ADJETIVOS */
+
+    .valores {
+        height: 400px;
+    }
+
+    /* VIDEO */
+
+    .contenedor-secundarioVid iframe {
+        height: 500px;
+    }
+
+    /* NUEVO LANZAMIENTO */
+
+    .cont-lanzamiento h2 {
+        font-size: 35px;
+        text-align: left;
+        width: 90vw;
+    }
+
+    .cont-lanz2 {
+        width: 95vw;
+    }
+
+}
